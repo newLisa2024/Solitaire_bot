@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      BOT_TOKEN: "<YOUR_BOT_TOKEN>"
+      PAYMENT_PROVIDER_TOKEN: "<YOUR_PAYMENT_TOKEN>"
+      WEBHOOK_URL: "https://your_domain.com/api/payments/webhook"
+      WEBAPP_URL: "https://your_domain.com/webapp/index.html"
